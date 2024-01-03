@@ -1,7 +1,4 @@
 pipeline{
-    agent{
-        label "Linux Test"
-    }
     stages{
         stage("A"){
             steps{
