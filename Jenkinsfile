@@ -18,6 +18,16 @@ pipeline{
             }
         }
     }
+    stage("B"){
+        when{
+            branch "feature*"
+        }
+        steps{
+            echo "cat README.md"
+
+        }
+
+    }
     post{
         always{
             echo "========always========"
