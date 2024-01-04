@@ -17,8 +17,9 @@ pipeline{
                 }
             }
         }
-    }
-    stage("B"){
+    
+    stage("B")
+    {
         when{
             branch "feature*"
         }
@@ -27,6 +28,7 @@ pipeline{
 
         }
 
+    }
     }
     post{
         always{
