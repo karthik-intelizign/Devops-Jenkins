@@ -21,7 +21,7 @@ pipeline{
     stage("B")
     {
         when{
-            branch "feature*"
+            branch "feature/*"
         }
         steps{
             echo "cat README.md"
